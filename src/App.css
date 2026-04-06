@@ -1,0 +1,117 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Full Width Fix (IMPORTANT) ===== */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  max-width: 100%;   /* remove Vite restriction */
+  margin: 0;         /* remove auto centering */
+  padding: 0;        /* remove default spacing */
+}
+
+/* ===== Body ===== */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fb;
+  color: #333;
+}
+
+/* ===== Hero ===== */
+.hero {
+  width: 100%;
+  background: linear-gradient(135deg, #9c6b15, #f9c54a);
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  opacity: 0.9;
+}
+
+/* ===== Layout ===== */
+.layout {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 120px);
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 220px;
+  background: #1f2937;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: #374151;
+}
+
+.sidebar a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+  flex: 1;
+  padding: 25px;
+  background: #f9fafb;
+  color: #333;
+}
+
+/* Headings fix */
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* ===== Footer ===== */
+.footer {
+  width: 100%;
+  background: #111827;
+  color: #dddddd;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
